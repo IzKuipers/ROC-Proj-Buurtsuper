@@ -1,0 +1,9 @@
+@import url("./page/home.css");
+
+div.page {
+  display: none;
+}
+
+div.page.show {
+  display: block;
+}

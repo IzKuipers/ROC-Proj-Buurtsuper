@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  padding-bottom: 35px;
+  background-color: var(--accent-primary);
+  color: #fff;
+  border-bottom-left-radius: 50% 15px;
+  border-bottom-right-radius: 50% 15px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 2px 5px 0px #0008;
+}
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  height: 32px;
+  border-radius: 16px;
+  transition: box-shadow 0.5s, background-color 0.3s, color 0.3s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: var(--accent-primary);
+  box-shadow: 0 2px 5px 0 #0006;
+}
+
+header nav a:active {
+  background-color: var(--accent-dark);
+  box-shadow: inset 0 0 5px var(--accent-primary), 0 2px 5 0 #0000;
+  color: var(--bg);
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+header div.banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header div.banner img {
+  height: 50px;
+}
