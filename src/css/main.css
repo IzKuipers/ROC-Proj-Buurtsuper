@@ -1,15 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round"); /* Material Icons Round */
 @import url("./page.css");
 @import url("./header.css");
-
-:root {
-  --font: "Open Sans", sans-serif;
-  --bg: #f1f0e7;
-  --bg-2: #dce4b0;
-  --fg: #020061;
-  --accent-primary: #4b640c;
-  --accent-dark: #303f09;
-}
+@import url("./sidebar.css");
+@import url("./root.css");
 
 html,
 body {
@@ -31,6 +25,31 @@ body {
   overflow-y: auto;
 }
 
+body div.content {
+  height: 100vh;
+}
+
+body main {
+  height: calc(100% - 105px);
+  overflow-y: auto;
+}
+
 * {
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+    max-width: unset;
+    margin: 0 !important;
+  }
+
+  header button.menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
 }

@@ -1,10 +1,13 @@
-import { writable } from "svelte/store";
+import { get, writable, type Writable } from "svelte/store";
+import { MenuOpened } from "./ui";
 
-export const registeredPages: string[] = [];
+export const registeredPages: Writable<Record<string, string>> = writable({});
 export const currentHash = writable<string>("#home");
 
 export function getHash() {
   const hash = location.hash || "#home";
 
-  currentHash.set(registeredPages.includes(hash) ? hash : "#notfound");
+  MenuOpened.set(false);
+
+  currentHash.set(get(registeredPages)[hash] ? hash : "#notfound");
 }

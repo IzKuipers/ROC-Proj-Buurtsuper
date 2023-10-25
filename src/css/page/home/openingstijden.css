@@ -1,0 +1,54 @@
+div.page-home div.openingstijden {
+  background-color: var(--bg-darker);
+  height: 350px;
+  width: calc(100% - 120px);
+  margin: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+div.page-home div.openingstijden div.tijden ul {
+  margin: 0;
+  margin-right: auto;
+  padding: 10px;
+}
+div.page-home div.openingstijden div.tijden {
+  padding: 40px;
+}
+div.page-home div.openingstijden div.tijden h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+div.page-home div.openingstijden img {
+  height: 100%;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+div.page-home div.openingstijden div.tijden ul li {
+  display: flex;
+  gap: 30px;
+}
+div.page-home div.openingstijden div.tijden ul li span.dag {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 720px) {
+  div.page-home div.openingstijden {
+    flex-direction: column-reverse;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: calc(100% - 60px);
+  }
+
+  div.page-home div.openingstijden img {
+    height: 320px;
+    margin: 0 auto;
+  }
+}

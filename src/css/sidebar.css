@@ -1,0 +1,80 @@
+div.sidebar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 70%;
+  height: 100%;
+  background-color: var(--accent-primary);
+  max-width: 350px;
+  padding: 20px;
+  z-index: 20;
+  pointer-events: none;
+  right: -100%;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-left-radius: 15px 50%;
+  border-bottom-left-radius: 15px 50%;
+}
+
+div.sidebar.show {
+  right: 0px;
+  opacity: 1;
+  pointer-events: initial;
+}
+div.sidebar-shade {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #0004;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+div.sidebar-shade.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+div.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.sidebar nav a {
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  transition: box-shadow 0.5s, background-color 0.3s, color 0.3s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+div.sidebar nav a:hover {
+  background-color: white;
+  color: var(--accent-primary);
+  box-shadow: 0 2px 5px 0 #0006;
+}
+
+div.sidebar nav a:active {
+  background-color: var(--accent-dark);
+  box-shadow: inset 0 0 5px var(--accent-primary), 0 2px 5 0 #0000;
+  color: var(--bg);
+}
+
+div.sidebar nav a.active {
+  background-color: #fff4;
+}
+
+div.sidebar nav a.active:hover {
+  color: white;
+}

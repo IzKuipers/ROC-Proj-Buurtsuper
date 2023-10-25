@@ -7,7 +7,10 @@
   import Contact from "./lib/page/Contact.svelte";
   import Herkomst from "./lib/page/Herkomst.svelte";
   import Home from "./lib/page/Home.svelte";
-  import { getHash } from "./ts/page";
+  import { currentHash, getHash, registeredPages } from "./ts/page";
+  import GebakSchotels from "./lib/page/GebakSchotels.svelte";
+  import PageNotFound from "./lib/page/PageNotFound.svelte";
+  import SideBar from "./lib/SideBar.svelte";
 
   onMount(() => {
     setTimeout(() => {
@@ -18,16 +21,23 @@
   });
 </script>
 
+<svelte:head>
+  <title>{$registeredPages[$currentHash] || "Home"} | De Buurtsuper</title>
+</svelte:head>
+
 <div class="content">
   <Header />
 
-  <main>
+  <main class="page-{$currentHash.replace('#', '')}">
     <!--De pagina's die kunnen worden weergegeven-->
-    <Page hash="home"><Home /></Page>
-    <Page hash="assortiment"><Assortiment /></Page>
-    <Page hash="gebak-schotels">gebak scotels brrr</Page>
-    <Page hash="herkomst"><Herkomst /></Page>
-    <Page hash="contact"><Contact /></Page>
-    <Page hash="notfound">Pagina niet gevonden!</Page>
+    <Page hash="home" caption="Home"><Home /></Page>
+    <Page hash="assortiment" caption="Assortiment"><Assortiment /></Page>
+    <Page hash="gebak-schotels" caption="Gebak & Schotels">
+      <GebakSchotels />
+    </Page>
+    <Page hash="herkomst" caption=""><Herkomst /></Page>
+    <Page hash="contact" caption="Contact"><Contact /></Page>
+    <Page hash="notfound" caption=""><PageNotFound /></Page>
   </main>
+  <SideBar />
 </div>

@@ -1,15 +1,15 @@
 <script>
-  import Weekly from "./Home/Weekly.svelte";
+  import OpeningsTijden from "./Home/OpeningsTijden.svelte";
 </script>
 
 <div class="banner">
   <div class="content">
-    <h1>Happy Halloween!</h1>
+    <h1>Nu in de aanbieding</h1>
     <p>
-      Vind de beste aanbiedingen voor de feestdagen. Wacht niet te lang, op is
-      op!
+      De vruchtenvlaai is nu exclusief tijdens de feestdagen verkrijgbaar met
+      20% korting! Koop snel, op is op.
     </p>
-    <a href="#assortiment">Bekijk het assortiment</a>
+    <a href="#assortiment" class="assortiment">Bekijk het assortiment</a>
   </div>
-  <Weekly />
 </div>
+<OpeningsTijden />

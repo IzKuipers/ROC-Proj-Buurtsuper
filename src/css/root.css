@@ -1,0 +1,9 @@
+:root {
+  --font: "Open Sans", sans-serif;
+  --bg-darker: #e1e0d2;
+  --bg: #f1f0e7;
+  --bg-2: #dce4b0;
+  --fg: #020061;
+  --accent-primary: #4b640c;
+  --accent-dark: #303f09;
+}
