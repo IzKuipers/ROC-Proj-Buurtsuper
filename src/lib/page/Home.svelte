@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import OpeningsTijden from "./Home/OpeningsTijden.svelte";
 </script>
 

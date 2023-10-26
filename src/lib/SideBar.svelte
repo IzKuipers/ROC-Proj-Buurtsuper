@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { MenuOpened } from "../ts/ui";
   import Nav from "./Header/Nav.svelte";
 </script>

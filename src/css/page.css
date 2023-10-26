@@ -1,16 +1,9 @@
 @import url("./page/home.css");
 
 div.page {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: padding-top 0.5s;
-  padding-top: 50px;
+  display: none;
 }
 
 div.page.show {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-  padding-top: 0;
+  display: block;
 }
