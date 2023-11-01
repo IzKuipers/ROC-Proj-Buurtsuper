@@ -11,6 +11,7 @@ Deze website is gemaakt met Vite + Svelte + TS. dit betekent dat hij niet zomaar
 
 ```bash
 git clone https://github.com/IzKuipers/ROC-Proj-Buurtsuper buurtsuper
+cd buurtsuper
 ```
 
 ### Bouw het project
