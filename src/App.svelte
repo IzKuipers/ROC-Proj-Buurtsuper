@@ -13,11 +13,9 @@
   import SideBar from "./lib/SideBar.svelte";
 
   onMount(() => {
-    setTimeout(() => {
-      getHash();
+    getHash();
 
-      addEventListener("hashchange", getHash);
-    }, 10);
+    addEventListener("hashchange", getHash);
   });
 </script>
 

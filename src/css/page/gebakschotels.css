@@ -1,0 +1,48 @@
+div.page-gebak-schotels {
+  padding: 30px;
+}
+
+div.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  gap: 20px;
+}
+
+div.page-gebak-schotels div.product {
+  width: 240px;
+  height: 300px;
+  padding: 20px;
+  border: var(--border) 1px solid;
+  border-radius: 5px;
+  background-color: var(--bg-darker);
+}
+
+div.page-gebak-schotels div.product div.image {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: var(--border) 1px solid;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+div.page-gebak-schotels div.product img {
+  width: 160px;
+}
+
+div.page-gebak-schotels div.product h4.product-name {
+  margin: 10px 0;
+  font-size: 15px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+div.page-gebak-schotels div.product p.price {
+  color: var(--fg);
+  margin: 0;
+}

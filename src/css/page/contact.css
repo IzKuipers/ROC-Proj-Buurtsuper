@@ -6,7 +6,7 @@ div.page-contact div.contact {
   display: flex;
   align-items: top;
   gap: 30px;
-  margin: 0 auto;
+  margin: 30px auto;
   width: fit-content;
 }
 div.page-contact div.contact > div {
@@ -80,8 +80,20 @@ div.page-contact div.contact div.right form button:active {
 }
 
 @media screen and (max-width: 740px) {
+  div.page-contact {
+    padding: 20px;
+  }
   div.page-contact div.contact {
     flex-direction: column-reverse;
     gap: 50px;
+    padding: 0;
+  }
+
+  div.page-contact div.contact div.right {
+    width: calc(100%);
+  }
+  div.page-contact div.contact div.right > *,
+  div.page-contact div.contact div.right > form > * {
+    width: 100% !important;
   }
 }
