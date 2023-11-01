@@ -46,3 +46,20 @@ div.page-gebak-schotels div.product p.price {
   color: var(--fg);
   margin: 0;
 }
+
+@media screen and (max-width: 570px) {
+  div.page-gebak-schotels div.products {
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+  div.page-gebak-schotels div.product {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -7,7 +7,9 @@ export const currentHash = writable<string>("#home");
 export function getHash() {
   const hash = location.hash || "#home";
 
-  MenuOpened.set(false);
+  MenuOpened.set(false); // Sluit de sidebar
 
-  currentHash.set(get(registeredPages)[hash] ? hash : "#notfound");
+  currentHash.set(
+    typeof get(registeredPages)[hash] == "string" ? hash : "#notfound" // Bestaat de pagina? Ga erheen. Zo niet, ga naar de 404.
+  );
 }

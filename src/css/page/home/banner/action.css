@@ -1,4 +1,4 @@
-div.page-home div.banner div.content a.assortiment {
+div.page-home div.banner div.content a.gebak-schotels {
   padding: 0 20px;
   height: 40px;
   border-radius: 20px;
@@ -13,12 +13,22 @@ div.page-home div.banner div.content a.assortiment {
   box-shadow: 0 2px 5px 0px #0008;
   transition: all 0.25s;
   -webkit-user-drag: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-div.page-home div.banner div.content a.assortiment:hover {
+div.page-home
+  div.banner
+  div.content
+  a.gebak-schotels
+  span.material-icons-round {
+  font-size: 18px;
+}
+div.page-home div.banner div.content a.gebak-schotels:hover {
   scale: 1.05;
 }
-div.page-home div.banner div.content a.assortiment:active {
+div.page-home div.banner div.content a.gebak-schotels:active {
   background-color: var(--accent-dark);
   box-shadow: none;
   scale: 0.95;

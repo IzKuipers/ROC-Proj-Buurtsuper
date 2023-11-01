@@ -10,6 +10,7 @@ import kersenvlaai from "../../assets/producten/KERSENVLAAI.jpg";
 import perenvlaai from "../../assets/producten/perenvlaai.png";
 import tompouce from "../../assets/producten/tompouce.jpg";
 
+// De producten op de Gebak & Schotels pagina.
 export const PRODUCTS: Products = [
   { name: "Ananasvlaai", price: 5.5, image: ananas },
   { name: "Appelflap", price: 5.5, image: appelflap },

@@ -50,6 +50,8 @@ div.page-contact div.contact div.right textarea {
   height: 132px;
   resize: none;
 }
+
+div.page-contact div.history a,
 div.page-contact div.contact div.right form button {
   padding: 0 20px;
   height: 40px;
@@ -70,15 +72,36 @@ div.page-contact div.contact div.right form button {
   margin-top: 5px;
 }
 
+div.page-contact div.history a {
+  width: fit-content;
+}
+
+div.page-contact div.history a:hover,
 div.page-contact div.contact div.right form button:hover {
   scale: 1.05;
 }
+div.page-contact div.history a:active,
 div.page-contact div.contact div.right form button:active {
   background-color: var(--accent-dark);
   box-shadow: none;
   scale: 0.95;
 }
 
+div.page-contact div.history p {
+  max-width: 500px;
+}
+
+div.page-contact div.history h1 {
+  font-size: 24px;
+}
+
+div.page-contact div.history {
+  margin: 30px 90px;
+}
+
+div.page-contact hr {
+  margin: 10px 90px;
+}
 @media screen and (max-width: 740px) {
   div.page-contact {
     padding: 20px;

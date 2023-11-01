@@ -1,0 +1,55 @@
+div.assortment {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+}
+div.assortment div.isle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+div.assortment div.info {
+  padding: 0 30px;
+}
+div.assortment div.isle h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+div.assortment div.isle p {
+  font-size: 20px;
+  text-align: justify;
+
+  margin: 0;
+}
+
+div.assortment div.isle img {
+  height: 200px;
+  border-radius: 15px;
+}
+div.assortment div.isle.inverted {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 800px) {
+  div.assortment div.isle {
+    flex-direction: column !important;
+  }
+
+  div.assortment div.isle p {
+    text-align: left;
+  }
+
+  div.assortment div.isle div.info {
+    padding: 0;
+  }
+
+  div.assortment div.isle div.image {
+    height: 200px;
+  }
+
+  div.assortment div.isle img {
+    width: 100%;
+  }
+}
