@@ -1,4 +1,5 @@
 @import url("./page/home.css");
+@import url("./page/contact.css");
 
 div.page {
   display: none;

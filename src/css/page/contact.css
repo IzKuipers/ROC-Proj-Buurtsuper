@@ -1,0 +1,87 @@
+div.page-contact {
+  padding: 30px;
+}
+
+div.page-contact div.contact {
+  display: flex;
+  align-items: top;
+  gap: 30px;
+  margin: 0 auto;
+  width: fit-content;
+}
+div.page-contact div.contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.page-contact div.contact div.left img {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 40%);
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+div.page-contact div.contact div.left h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+div.page-contact div.contact div.left p {
+  margin: 0;
+}
+
+div.page-contact div.contact div.right h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+div.page-contact div.contact div.right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.page-contact div.contact div.right input,
+div.page-contact div.contact div.right textarea {
+  width: 360px;
+  padding: 12px 15px;
+  border: var(--border) 1px solid;
+  border-radius: 5px;
+  background-color: var(--bg-darker);
+  font-family: "Inter", sans-serif;
+}
+div.page-contact div.contact div.right textarea {
+  height: 132px;
+  resize: none;
+}
+div.page-contact div.contact div.right form button {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--accent-primary);
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 38.5px;
+  box-shadow: 0 2px 5px 0px #0008;
+  transition: all 0.25s;
+  -webkit-user-drag: none;
+  border: none;
+  width: 100%;
+  margin-top: 5px;
+}
+
+div.page-contact div.contact div.right form button:hover {
+  scale: 1.05;
+}
+div.page-contact div.contact div.right form button:active {
+  background-color: var(--accent-dark);
+  box-shadow: none;
+  scale: 0.95;
+}
+
+@media screen and (max-width: 740px) {
+  div.page-contact div.contact {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
