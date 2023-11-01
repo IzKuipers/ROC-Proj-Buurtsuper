@@ -119,4 +119,8 @@ div.page-contact hr {
   div.page-contact div.contact div.right > form > * {
     width: 100% !important;
   }
+
+  div.page-contact div.history {
+    margin: 30px;
+  }
 }
